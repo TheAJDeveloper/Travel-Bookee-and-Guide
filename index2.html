@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Travel Booking Website</title>
+    <link rel="stylesheet" type="text/css" href="styles2.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Outfit:wght@500&display=swap" rel="stylesheet">
+</head>
+<header>
+    <a href="newuser.html"><button>New User</button></a>
+</header>  
+<body>
+    <header>
+        <script src="dropdownbox.js"></script>
+        <div class="header">
+            <p>Travel Booking Website</p>
+            <form class="search-form">
+                <div class="dropdown">
+                    <input type="text" id="fromInput" placeholder="From" oninput="showDropdown('from')">
+                    <ul class="dropdown-content" id="fromDropdownContent">
+                        <li>Tirupati</li>
+                        <li>Goa</li>
+                        <li>Kedarnath</li>
+                        <li>Manali</li>
+                        <li>Andaman</li>
+                        <li>Agra</li>
+                    </ul>
+                </div>
+                <div class="dropdown">
+                    <input type="text" id="toInput" placeholder="To" oninput="showDropdown('to')">
+                    <ul class="dropdown-content" id="toDropdownContent">
+                        <li>Tirupati</li>
+                        <li>Goa</li>
+                        <li>Kedarnath</li>
+                        <li>Manali</li>
+                        <li>Andaman</li>
+                        <li>Agra</li>
+                    </ul>
+                </div>
+                <input type="date" name="travel-date" placeholder="Date">
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </header>
+    <!--this is the middle part of the website-->
+    <div class="content">
+        <p> Popular destinations of this seasion</p>
+        <div class="container">
+            <div class="destination">
+                <h3>Tirupati</h3>
+                <a href="destination.html"><button>Details</button></a>
+                <a href="bokking.html"><button>Book Now</button></a>
+            </div>
+            <div class="destination2">
+                <h3>Goa</h3>
+                <a href="destination2.html"><button>Details</button></a>
+                <a href="bokking.html"><button>Book Now</button></a>
+            </div>
+            <div class="destination3">
+                <h3>Kedarnath</h3>
+                <a href="destination3.html"><button>Details</button></a>
+                <a href="bokking.html"><button>Book Now</button></a>
+            </div>
+            <div class="destination4">
+                <h3>Manali</h3>
+                <a href="destination2.html"><button>Details</button></a>
+                <a href="bokking.html"><button>Book Now</button></a>
+            </div> 
+            <div class="destination5">
+                <h3>Agra</h3>
+                <a href="bokking.html"><button>Details</button></a>
+                <a href="bokking.html"><button>Book Now</button></a>
+            </div> 
+            <div class="destination6">
+                <h3>Andaman</h3>
+                <a href="destination.html"><button>Details</button></a>
+                <a href="bokking.html"><button>Book Now</button></a>
+            </div>
+        </div>
+    </div>
+    <!--in this section i created the reviw option-->   
+    <a href="reviw.html"><button>Review</button></a>
+    <!-- Rest of the website content goes here -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-column">
+                <h2>About Us</h2>
+                <p>About MakeMyTrip</p>
+                <p>Careers</p>
+                <p>Contact Us</p>
+            </div>
+        </div>
+        <h3>&copy; 2023 Travel Booking. All rights reserved.<h3>
+    </footer>
+</body>
+</html>
